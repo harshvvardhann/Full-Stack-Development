@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            text-align: center;
+            border: 2px solid black;
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+        .parent-row1{
+            border: 2px solid black;
+            width: 500px;
+            height: 250px;
+            background-color: burlywood;
+        }
+        .parent-row2{
+            border: 2px solid black;
+            width: 500px;
+            height: 250px;
+            background-color:red;
+        }
+        .col1{
+            height: 250px;
+            width: 248px;
+            float: right;
+            /*after dividing into 2 columns the hello part is there till 250px width only but to adjust the about part also next to hello we need to float the hello to left first.*/
+        }
+        .col2{
+            height: 250px;
+            width: 250px;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="parent-row1">
+            <!-- dividing the helloabout div into 2 colums -->
+            <div class="col1">Hello</div>
+            <div class="col2">About</div>
+        </div>
+        <hr>
+        <div class="parent-row2">
+            <div class="col1">Me</div>
+            <div class="col2">And</div>
+        </div>
+    </div>
+</body>
+</html>
