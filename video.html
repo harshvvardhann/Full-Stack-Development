@@ -1,0 +1,25 @@
+<!-- 9 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <video controls width="500" muted autoplay preload="" loop>
+        <source src="h1.mp4" type="video/mp4">
+        your browser does not support video tag
+    </video> -->
+
+    <!-- Poster: used as a thumbnail...and for that we need to remove the preload and autoplay bcoz if autoplay is on then on loading the browser the video will start automatically and we won't be able to show the thumbnail or poster. We can include the preload as it won't cause any wrong but for just sake you should remove. -->
+
+    <video controls width="500" muted loop poster="harshbdy.jpg" preload="">
+        <source src="h1.mp4" type="video/mp4">
+        <source src="j1.mp4" type="video/mp4">
+        your browser does not support video tag
+    </video>
+
+    <!-- NOTE: we can add more source as well like for video/ogv, video/webm and it depends on our browser , it will load any source based on it if able to load 1st source and will load it and remaining won't and it won't be able to load 1st source and is able to load 2nd source then will load 2nd.. -->
+</body>
+</html>
