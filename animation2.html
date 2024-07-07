@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 600px;
+            height: 1000px;
+            position: relative;
+            border: 2px solid black;
+            margin: auto;
+        }
+        .div2{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: box 6s;
+            animation-timing-function: linear;
+            animation-iteration-count: 5;
+        }
+        .div3{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: box 6s;
+            animation-timing-function: ease;
+            animation-iteration-count: 5;
+            top: 100px;
+        }
+        .div4{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: box 6s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: 5;
+            top: 200px;
+        }
+        .div5{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: box 6s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: 5;
+            top: 300px;
+        }
+        .div6{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: red;
+            animation: box 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 5;
+            top: 400px;
+        }
+        @keyframes box{
+            from{
+                left: 0px;
+            }to{
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div2">Linear</div>
+        <div class="div3">Ease</div>
+        <div class="div4">Ease-in</div>
+        <div class="div5">Ease-out</div>
+        <div class="div6">Ease-in-out</div>
+    </div>
+</body>
+</html>
